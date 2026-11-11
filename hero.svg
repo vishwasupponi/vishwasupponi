@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" width="100%" height="330">
+  <defs>
+    <radialGradient id="satBg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#111619" />
+      <stop offset="100%" stop-color="#050708" />
+    </radialGradient>
+
+    <pattern id="satGrid" width="90" height="90" patternUnits="userSpaceOnUse">
+      <path d="M 90 0 L 0 0 0 90" fill="none" stroke="#8fa3ad" stroke-width="0.6" stroke-opacity="0.12" />
+      <path d="M 45 0 L 45 90 M 0 45 L 90 45" fill="none" stroke="#8fa3ad" stroke-width="0.4" stroke-opacity="0.06" stroke-dasharray="3 3" />
+      <path d="M 86 0 L 90 0 L 90 4" fill="none" stroke="#8fa3ad" stroke-width="1" stroke-opacity="0.3" />
+    </pattern>
+
+    <filter id="tacGlow" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <clipPath id="bannerReveal">
+      <rect x="195" y="128" width="445" height="52">
+        <animate attributeName="width" values="0;445;445;445" keyTimes="0;0.12;0.9;1" dur="10s" repeatCount="indefinite" />
+      </rect>
+    </clipPath>
+
+    <clipPath id="subReveal">
+      <rect x="195" y="184" width="330" height="24">
+        <animate attributeName="width" values="0;0;330;330" keyTimes="0;0.10;0.22;1" dur="10s" repeatCount="indefinite" />
+      </rect>
+    </clipPath>
+  </defs>
+
+  <rect width="900" height="330" fill="url(#satBg)" stroke="#263036" stroke-width="1.5" />
+  <rect width="900" height="330" fill="url(#satGrid)" />
+
+  <g fill="none" stroke="#6c7d87" stroke-width="0.8" opacity="0.16">
+    <path d="M -30,70 Q 140,120 280,50 T 620,90 T 930,40" />
+    <path d="M -30,95 Q 150,145 290,75 T 630,115 T 930,65" />
+    <path d="M -30,120 Q 160,170 300,100 T 640,140 T 930,90" />
+    <path d="M 80,340 Q 260,210 460,260 T 860,190" />
+    <path d="M 110,350 Q 280,230 480,280 T 880,210" />
+    <ellipse cx="700" cy="155" rx="140" ry="70" transform="rotate(-12 700 155)" />
+    <ellipse cx="700" cy="155" rx="95" ry="45" transform="rotate(-12 700 155)" stroke-dasharray="6 4" />
+    <ellipse cx="700" cy="155" rx="45" ry="20" transform="rotate(-12 700 155)" />
+  </g>
+
+  <rect x="0" y="0" width="900" height="44" fill="#080b0d" fill-opacity="0.9" />
+  <line x1="0" y1="44" x2="900" y2="44" stroke="#33414a" stroke-width="1" />
+  <rect x="0" y="44" width="900" height="12" fill="#13191d" fill-opacity="0.8" />
+  <line x1="0" y1="56" x2="900" y2="56" stroke="#222b30" stroke-width="0.8" />
+
+  <g transform="translate(34, 22)" stroke="#8fa3ad" fill="none">
+    <circle r="14" stroke-width="1.2" stroke-opacity="0.7" />
+    <circle r="10" stroke-width="0.6" stroke-dasharray="4 2">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite" />
+    </circle>
+    <path d="M -16,0 L 16,0 M 0,-16 L 0,16" stroke-width="0.6" stroke-opacity="0.5" />
+    <polygon points="0,-7 4,5 0,2 -4,5" fill="#8fa3ad" stroke="none" opacity="0.8" />
+  </g>
+
+  <g font-family="&#39;Courier New&#39;, Consolas, monospace" fill="#8fa3ad">
+    <text x="60" y="21" font-size="13" font-weight="bold" fill="#dce4e8" letter-spacing="2">Task Force STALKER</text>
+    <text x="60" y="33" font-size="8.5" letter-spacing="1.5" opacity="0.65">IMAGING DATABASE NETWORK</text>
+
+    <text x="60" y="53" font-size="7.5" opacity="0.45" letter-spacing="1">CONFIG</text>
+    <text x="175" y="53" font-size="7.5" opacity="0.45" letter-spacing="1">VIEW</text>
+    <text x="410" y="53" font-size="7.5" opacity="0.45" letter-spacing="1">TABLE</text>
+    <text x="595" y="53" font-size="7.5" fill="#dce4e8" opacity="0.85" letter-spacing="1">
+      00:15.712
+      <animate attributeName="opacity" values="0.85;0.3;0.85" dur="1s" repeatCount="indefinite" />
+    </text>
+
+    <text x="410" y="34" font-size="8.5" fill="#dce4e8" letter-spacing="1">NTWRK: TKO26-9827-187W3</text>
+
+    <text x="645" y="16" font-size="6.5" opacity="0.55">33N</text>
+    <text x="645" y="24" font-size="6.5" opacity="0.55">DECLINATION -------- +02°14'</text>
+    <text x="645" y="32" font-size="6.5" opacity="0.55">GRID SYSTEM -------- UTM</text>
+    <text x="805" y="24" font-size="6.5" opacity="0.55">PROJECTION</text>
+    <text x="805" y="32" font-size="6.5" opacity="0.55">MERCATOR</text>
+  </g>
+
+  <rect x="65" y="72" width="490" height="196" fill="#070a0c" fill-opacity="0.45" stroke="#33414a" stroke-width="0.8" />
+  <rect x="485" y="66" width="355" height="192" fill="#070a0c" fill-opacity="0.35" stroke="#33414a" stroke-width="0.8" />
+
+  <g transform="translate(520, 82)" font-family="&#39;Courier New&#39;, Consolas, monospace">
+    <rect x="0" y="0" width="95" height="12" fill="#132630" fill-opacity="0.85" stroke="#3a6375" stroke-width="0.5" />
+    <text x="6" y="9" font-size="8" fill="#82c4de" font-weight="bold" letter-spacing="1">SECTOR_04</text>
+    <rect x="0" y="15" width="170" height="95" fill="#0c1317" stroke="#2c3940" stroke-width="0.8" />
+    <path d="M 10,95 L 45,45 L 85,75 L 125,30 L 160,85" fill="none" stroke="#476652" stroke-width="1.2" opacity="0.6" />
+    <path d="M 0,60 L 170,60 M 85,15 L 85,110" stroke="#8fa3ad" stroke-width="0.4" stroke-opacity="0.25" />
+
+    <g fill="#d13b3b" font-size="7.5" font-weight="bold" letter-spacing="0.5">
+      <text x="182" y="26">FEED_1</text>
+      <text x="182" y="36">FEED_2</text>
+      <text x="182" y="72">FEED_3</text>
+      <text x="182" y="82">FEED_4</text>
+      <text x="176" y="96" fill="#ff4d4d">
+        ● LIVE FEED
+        <animate attributeName="opacity" values="1;0.2;1" dur="0.9s" repeatCount="indefinite" />
+      </text>
+    </g>
+
+    <rect x="245" y="15" width="75" height="45" fill="#090d10" stroke="#2c3940" stroke-width="0.8" />
+    <circle cx="282" cy="37" r="14" fill="none" stroke="#527a68" stroke-width="0.8" stroke-dasharray="3 2">
+      <animateTransform attributeName="transform" type="rotate" from="0 282 37" to="360 282 37" dur="8s" repeatCount="indefinite" />
+    </circle>
+    <rect x="245" y="65" width="75" height="45" fill="#090d10" stroke="#2c3940" stroke-width="0.8" />
+    <polyline points="250,95 262,82 274,90 286,73 298,88 315,78" fill="none" stroke="#8fa3ad" stroke-width="1" opacity="0.6" />
+  </g>
+
+  <g transform="translate(88, 92)" font-family="&#39;Courier New&#39;, Consolas, monospace">
+    <rect x="0" y="0" width="145" height="12" fill="#132630" fill-opacity="0.85" stroke="#3a6375" stroke-width="0.5" />
+    <text x="6" y="9" font-size="8" fill="#82c4de" font-weight="bold" letter-spacing="1">SAT_RECON // BIO-ID</text>
+  </g>
+
+  <g transform="translate(152, 155)">
+    <animateTransform attributeName="transform" type="translate" values="152,155; 146,151; 155,158; 152,155" keyTimes="0;0.35;0.75;1" dur="6s" repeatCount="indefinite" />
+    <path d="M -20,-10 L -20,-20 L -10,-20 M 10,-20 L 20,-20 L 20,-10 M -20,10 L -20,20 L -10,20 M 10,20 L 20,20 L 20,10" fill="none" stroke="#68a89a" stroke-width="1.6" />
+    <line x1="-6" y1="0" x2="6" y2="0" stroke="#68a89a" stroke-width="1.2" />
+    <line x1="0" y1="-6" x2="0" y2="6" stroke="#68a89a" stroke-width="1.2" />
+    <line x1="-34" y1="0" x2="-24" y2="0" stroke="#68a89a" stroke-width="1" stroke-dasharray="3 2" />
+    <line x1="24" y1="0" x2="34" y2="0" stroke="#68a89a" stroke-width="1" stroke-dasharray="3 2" />
+    <line x1="0" y1="-34" x2="0" y2="-24" stroke="#68a89a" stroke-width="1" stroke-dasharray="3 2" />
+    <line x1="0" y1="24" x2="0" y2="34" stroke="#68a89a" stroke-width="1" stroke-dasharray="3 2" />
+  </g>
+
+  <g clip-path="url(#bannerReveal)">
+    <rect x="195" y="131" width="438" height="46" fill="#091318" fill-opacity="0.92" stroke="#477a71" stroke-width="1.2" />
+    <rect x="195" y="131" width="5" height="46" fill="#68b8a6" />
+    <path d="M 624,131 L 633,131 L 633,140 M 624,177 L 633,177 L 633,168" fill="none" stroke="#68b8a6" stroke-width="1.8" />
+    <text x="214" y="165" font-family="&#39;Arial Narrow&#39;, Impact, &#39;Segoe UI&#39;, Arial, sans-serif" font-size="33" font-weight="900" letter-spacing="5.5" fill="#d4ede7" filter="url(#tacGlow)">
+      VISHWAS UPPONI
+    </text>
+  </g>
+
+  <g clip-path="url(#subReveal)" font-family="&#39;Courier New&#39;, Consolas, monospace">
+    <rect x="195" y="184" width="295" height="19" fill="#0c1b21" fill-opacity="0.9" stroke="#2d4c57" stroke-width="0.8" />
+    <rect x="203" y="191" width="5" height="5" fill="#ff5500">
+      <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite" />
+    </rect>
+    <text x="215" y="197" font-size="10.5" font-weight="bold" letter-spacing="2" fill="#82b8ad">
+      STATUS: ACTIVE // CLEARANCE: L5
+    </text>
+  </g>
+
+  <g transform="translate(810, 215)" opacity="0.75">
+    <animateTransform attributeName="transform" type="translate" values="810,215; 795,190; 820,205; 810,215" dur="9s" repeatCount="indefinite" />
+    <path d="M -14,-7 L -14,-14 L -7,-14 M 7,-14 L 14,-14 L 14,-7 M -14,7 L -14,14 L -7,14 M 7,14 L 14,14 L 14,7" fill="none" stroke="#68a89a" stroke-width="1.2" />
+    <line x1="-4" y1="0" x2="4" y2="0" stroke="#68a89a" stroke-width="1" />
+    <line x1="0" y1="-4" x2="0" y2="4" stroke="#68a89a" stroke-width="1" />
+  </g>
+
+  <line x1="65" y1="72" x2="555" y2="72" stroke="#68b8a6" stroke-width="1.2" stroke-opacity="0.4">
+    <animate attributeName="y1" values="72;268;72" dur="7s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="72;268;72" dur="7s" repeatCount="indefinite" />
+  </line>
+
+  <line x1="0" y1="280" x2="900" y2="280" stroke="#33414a" stroke-width="1" />
+  <rect x="0" y="280" width="900" height="50" fill="#07090b" fill-opacity="0.92" />
+
+  <g font-family="&#39;Courier New&#39;, Consolas, monospace" font-size="8" fill="#8fa3ad" opacity="0.75">
+    <text x="65" y="295" fill="#dce4e8" font-weight="bold">FEEDS</text>
+    <text x="105" y="295">POINTER</text>
+    <text x="105" y="305">X_3478921</text>
+    <text x="105" y="314">X_5992105</text>
+    <text x="105" y="323">X_2110471</text>
+
+    <text x="175" y="295">X</text>
+    <text x="175" y="305">0.29</text>
+    <text x="175" y="314">0.21</text>
+    <text x="175" y="323">0.24</text>
+
+    <text x="205" y="295">Y</text>
+    <text x="205" y="305">0.01</text>
+    <text x="205" y="314">0.09</text>
+    <text x="205" y="323">0.11</text>
+
+    <text x="235" y="295">Z</text>
+    <text x="235" y="305">0.42</text>
+    <text x="235" y="314">0.46</text>
+    <text x="235" y="323">
+      0.47
+      <animate attributeName="opacity" values="1;0.2;1" dur="0.4s" repeatCount="indefinite" />
+    </text>
+
+    <rect x="295" y="309" width="310" height="2" fill="#477a71" opacity="0.75" />
+
+    <text x="645" y="295" fill="#dce4e8" font-weight="bold">GEO. COMMS.</text>
+    <text x="645" y="307">SAT_LINK // ENCRYPTED_STREAM</text>
+    <text x="645" y="318" fill="#529471">SIGNAL: LOCKED [99.8%]</text>
+  </g>
+</svg>
